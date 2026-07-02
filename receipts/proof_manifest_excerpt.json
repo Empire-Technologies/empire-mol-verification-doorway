@@ -1,0 +1,46 @@
+{
+  "pack_name": "Empire MOL Public Verification Pack v0.1.0",
+  "pack_scope": "Public decoder and restoration-integrity proof for the included signed sample set.",
+  "canonical_artifact": "https://doi.org/10.5281/zenodo.21115968",
+  "verification_key": {
+    "algorithm": "Ed25519",
+    "public_key_fingerprint_sha256": "f5fc2303eff9ed4a81e423a6b6b83f48cfc57da9ad171578457964d283cda561"
+  },
+  "samples": [
+    {
+      "sample_id": "raw_bias_1gb",
+      "domain": "synthetic bias-dominant structured bytes",
+      "compression_ratio": 471.52,
+      "saved_pct": 99.79,
+      "roundtrip_verified": true
+    },
+    {
+      "sample_id": "enwik9",
+      "domain": "natural-language text benchmark",
+      "compression_ratio": 2.81,
+      "saved_pct": 64.44,
+      "roundtrip_verified": true
+    },
+    {
+      "sample_id": "nci",
+      "domain": "Silesia corpus binary scientific image data",
+      "compression_ratio": 10.08,
+      "saved_pct": 90.08,
+      "roundtrip_verified": true
+    },
+    {
+      "sample_id": "samba",
+      "domain": "Silesia corpus source-code tree snapshot",
+      "compression_ratio": 3.66,
+      "saved_pct": 72.71,
+      "roundtrip_verified": true
+    },
+    {
+      "sample_id": "silesia_zip_legacy",
+      "domain": "already-compressed corpus archive wrapper",
+      "compression_ratio": 1.0,
+      "saved_pct": -0.14,
+      "roundtrip_verified": true
+    }
+  ]
+}

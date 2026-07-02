@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+title: "Empire MOL Public Verification Pack"
+message: "If you use this public verification artifact or doorway repository, please cite the Zenodo record."
+type: software
+authors:
+  - family-names: "Ristuben"
+    given-names: "John"
+    affiliation: "Empire Technologies LLC"
+version: "v0.1.0"
+date-released: "2026-07-01"
+doi: "10.5281/zenodo.21115968"
+license: "Apache-2.0"
+url: "https://doi.org/10.5281/zenodo.21115968"
+repository-code: "https://github.com/Empire-Technologies/empire-mol-verification-doorway"
+abstract: >
+  Public verification release for selected Empire-signed .mol archives.
+  Supports public verification, decode/restore, and SHA-256 round-trip checks
+  for the included sample set only.

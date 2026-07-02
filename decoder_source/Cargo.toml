@@ -1,0 +1,28 @@
+[package]
+name = "mol_decoder"
+version = "0.1.0"
+edition = "2021"
+description = "Empire decoder — open reference implementation"
+license = "Apache-2.0"
+
+[[bin]]
+name = "mol_decoder"
+path = "src/main.rs"
+
+[dependencies]
+lz4_flex = { version = "0.11", default-features = false, features = ["frame", "std"] }
+zstd = "0.13"
+sha2 = "0.10"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+hex = "0.4"
+ed25519-dalek = { version = "2.1", default-features = false, features = ["std"] }
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
+strip = true
+panic = "abort"
+debug = false
+overflow-checks = false
